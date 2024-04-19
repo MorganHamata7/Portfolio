@@ -453,6 +453,149 @@
     width: 160px;
     max-width: 100%;
   }
+  .footer {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #6a4d3d;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px 48px;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .footer {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+
+  .separator {
+    border: 1px solid rgba(230, 230, 230, 1);
+    background-color: #e6e6e6;
+    height: 1px;
+  }
+
+  @media (max-width: 991px) {
+    .separator {
+      max-width: 100%;
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 47px;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .footer-content {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .site-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    align-self: start;
+  }
+
+  .site-name {
+    color: #000;
+    font: 400 24px/150% Inter, sans-serif;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 97px;
+  }
+
+  @media (max-width: 991px) {
+    .social-icons {
+      margin-top: 40px;
+    }
+  }
+
+  .social-icon {
+    width: 40px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .footer-links {
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  @media (max-width: 991px) {
+    .footer-links {
+      max-width: 100%;
+    }
+  }
+
+  .link-columns {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .link-columns {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  .link-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 991px) {
+    .link-column {
+      width: 100%;
+    }
+  }
+
+  .topic-links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 16px;
+    color: #454545;
+    font-weight: 500;
+    line-height: 150%;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 991px) {
+    .topic-links {
+      margin-top: 31px;
+      white-space: initial;
+    }
+  }
+
+  .topic-heading {
+    color: #000;
+    font-family: Inter, sans-serif;
+  }
+
+  .topic-link {
+    font-family: Inter, sans-serif;
+    margin-top: 24px;
+  }
 </style>
 
 <header class="page-header">
@@ -531,3 +674,45 @@
     </div>
   </section>
 </main>
+<footer class="footer">
+  <div class="separator"></div>
+  <div class="footer-content">
+    <div class="site-info">
+      <h2 class="site-name">Site name</h2>
+      <div class="social-icons">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/199c9a3c64fa87237dabe74b1aff1fe617935141f37a07ba364b7012e90e628c?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Social media icon" class="social-icon" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1bac3668b19309ab1c82835d154f9962b24bad9c262723d53374e3173c3e762?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Social media icon" class="social-icon" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9c8d64becb556072cf4288b2dadd32d18a3ce8e19d5cc15f298f66d1125313b?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Social media icon" class="social-icon" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0828515f09127d365461d17e1036e88788811bd5c0258116139d171a870fbe56?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Social media icon" class="social-icon" />
+      </div>
+    </div>
+    <nav class="footer-links">
+      <div class="link-columns">
+        <div class="link-column">
+          <div class="topic-links">
+            <h3 class="topic-heading">Topic</h3>
+            <a href="#" class="topic-link">Page</a>
+            <a href="#" class="topic-link">Page</a>
+            <a href="#" class="topic-link">Page</a>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="topic-links">
+            <h3 class="topic-heading">Topic</h3>
+            <a href="#" class="topic-link">Page</a>
+            <a href="#" class="topic-link">Page</a>
+            <a href="#" class="topic-link">Page</a>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="topic-links">
+            <h3 class="topic-heading">Topic</h3>
+            <a href="#" class="topic-link">Page</a>
+            <a href="#" class="topic-link">Page</a>
+            <a href="#" class="topic-link">Page</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</footer>
