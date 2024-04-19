@@ -329,6 +329,130 @@
       max-width: 100%;
     }
   }
+  .skills-section {
+    border-radius: 20px;
+    background-color: #f0c3c3;
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1215px;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  @media (max-width: 991px) {
+    .skills-section {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .skills-title {
+    color: #000;
+    letter-spacing: -1.28px;
+    font: 700 64px Montserrat Alternates, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .skills-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+
+  .skills-description {
+    color: #6a4d3d;
+    margin-top: 24px;
+    font: 500 32px/150% Montserrat Alternates, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .skills-description {
+      max-width: 100%;
+    }
+  }
+
+  .skills-grid {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin-top: 24px;
+    flex-direction: column;
+    padding: 0 23px;
+  }
+
+  @media (max-width: 991px) {
+    .skills-grid {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  .skills-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  @media (max-width: 991px) {
+    .skills-row {
+      flex-wrap: wrap;
+    }
+  }
+
+  .skill-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 180px;
+    max-width: 100%;
+  }
+
+  .skill-icon-wide {
+    aspect-ratio: 0.98;
+    object-fit: auto;
+    object-position: center;
+    width: 176px;
+    max-width: 100%;
+  }
+
+  .skill-icon-tall {
+    aspect-ratio: 1.06;
+    object-fit: auto;
+    object-position: center;
+    width: 192px;
+    max-width: 100%;
+  }
+
+  .skill-icon-square {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 180px;
+    max-width: 100%;
+  }
+
+  .skills-row-2 {
+    display: flex;
+    gap: 10px;
+    margin: 10px 24px 0;
+  }
+
+  @media (max-width: 991px) {
+    .skills-row-2 {
+      margin-right: 10px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .skill-icon-short {
+    aspect-ratio: 0.88;
+    object-fit: auto;
+    object-position: center;
+    width: 160px;
+    max-width: 100%;
+  }
 </style>
 
 <header class="page-header">
@@ -384,4 +508,26 @@
       </div>
     </div>
   </section>
+<section class="skills-section">
+  <h2 class="skills-title">Skills</h2>
+  <p class="skills-description">These are some Technologies I am familiar with:</p>
+  <div class="skills-grid">
+    <div class="skills-row">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/abef177093ee2a961fbe8d7272e983696775a004c2e3c398d222f196cc2c1174?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-wide" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bd3d03f312761dc53d433bc52d41261e3a8774e11f35380862063ea0279305d5?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b720c15ba7602ca1b9b31669c21405625ff513945e3613ebb603316263358f28?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-tall" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/003643199b460e94f8f669c0e708597e4bb37f09db312f12c25266ac97d0f80a?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5ffb1d1740d301b61e4f47f29f9caf60e77cf9f1a71d80685cbe4cb7d50fd4a1?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c72a73457cf89c843a9bfaf5c74ccbd4600620d795714251a310274e667a7245?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+    </div>
+    <div class="skills-row-2">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/65370a4dcc21f3628955b1f1a05aea171c8b3b3064748675802df6523ec54059?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-short" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab9d7cc9ba4ef654955c04bc3e70c2c89f75a5e9ba8ce6bd8fd104ac6a886596?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-short" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/16629cff3d29f756976370bde1457c9f2c4efdc5ace6c13d9eac8f1742a68aca?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f6b997126e7a787e99db780bd08938750d15baa9587446fed02f6fcef16082bf?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a79190486190d26b8ff640c5aa798b09b4bad1eb39c2842cd00078d1b538792?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb04ab0cf7931df89d7272b30d66528b92f131878a7e5b703bdbb801426a29a7?apiKey=8ce932d69bf4459ba82f9a4cf4ef6602&" alt="Skill icon" class="skill-icon-square" />
+    </div>
+  </div>
+</section>
 </main>
